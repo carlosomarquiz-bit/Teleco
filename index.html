@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para mi Lulu ♥</title>
+<style>
+:root{color-scheme:light dark;--pink:#f4a6c7;--rose:#ff78aa;--plum:#291025;--ink:#fff;--glass:#ffffff14;--line:#ffffff28}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:radial-gradient(circle at 18% 8%,#ff78aa3a,transparent 32%),radial-gradient(circle at 85% 20%,#be78ff30,transparent 30%),linear-gradient(135deg,#160b18,#291025 48%,#120914);color:#fff;min-height:100vh;padding:22px 16px 60px}
+main{max-width:980px;margin:auto}.hero{text-align:center;padding:38px 12px 28px}.heart{font-size:44px;color:#ff9bc0}h1{font-size:clamp(36px,8vw,64px);font-weight:500;margin:10px 0}h2{font-weight:500}.intro{font-size:18px;line-height:1.8;max-width:680px;margin:18px auto;color:#f8eaf1}.panel{border:1px solid var(--line);border-radius:24px;background:var(--glass);padding:24px;margin:22px 0;backdrop-filter:blur(6px)}.note{text-align:center;line-height:1.9;font-size:17px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.song{padding:20px;text-align:center;border-radius:22px;background:#ffffff13;border:1px solid var(--line)}.num{color:var(--pink);letter-spacing:2px}.song h3{font-weight:500;min-height:48px}.btn{border:0;border-radius:999px;padding:12px 20px;background:var(--pink);color:#291025;font-weight:bold;cursor:pointer;font-size:15px;text-decoration:none;display:inline-block;margin:5px}.btn.secondary{background:#ffffff18;color:#fff;border:1px solid var(--line)}.section-title{text-align:center;color:#ffd5e5}.hidden{display:none}.letter{line-height:1.9;white-space:pre-wrap}.memory-list{display:grid;gap:10px}.memory{padding:12px 14px;border-radius:14px;background:#ffffff12;border:1px solid var(--line)}textarea,input{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:#ffffff12;color:#fff;font:inherit;margin:7px 0}textarea{min-height:110px}.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.photos img{width:100%;height:180px;object-fit:cover;border-radius:15px;border:1px solid var(--line)}footer{text-align:center;color:#d5bdca;margin-top:30px}.signature{color:var(--pink);font-size:20px;margin-top:10px}.secret{font-size:18px;text-align:center;line-height:1.9}.spark{position:fixed;pointer-events:none;animation:rise 1.8s ease-out forwards;font-size:24px}@keyframes rise{to{transform:translateY(-180px) rotate(25deg);opacity:0}}
+</style>
+</head>
+<body><main>
+<header class="hero"><div class="heart">♥</div><h1>Para mi Lulu</h1><p class="intro">Hay cosas que se dicen mejor con una canción, y otras que merecen su propio rinconcito. Este pequeño espacio es para ti. ♥</p></header>
+<section class="panel note"><p>Te dedico estas canciones porque cada una, a su manera, me hace pensar en ti, en nosotros y en todo lo bonito que hemos ido viviendo. Espero que cuando las escuches puedas sentir aunque sea un poquito de todo el cariño con el que te las escogí.</p><p>Gracias por estar en mi vida, por hacerme sonreír y por todos esos momentos que, aunque parezcan pequeños, para mí significan muchísimo.<br><strong>Te quiero mucho, Lulu. ♥</strong></p></section>
+<section><h2 class="section-title">Nuestras canciones ♡</h2><div class="grid">
+<article class="song"><div class="num">♡ 01</div><h3>Para escucharte y pensar en ti</h3><p>Toca para escucharla en YouTube</p><a class="btn" target="_blank" rel="noopener" href="https://youtu.be/sTO7IL-sEVw">▶ Escuchar</a></article>
+<article class="song"><div class="num">♡ 02</div><h3>Una canción que quería compartir contigo</h3><p>Toca para escucharla en YouTube</p><a class="btn" target="_blank" rel="noopener" href="https://youtu.be/8PI7Zpj0nPw">▶ Escuchar</a></article>
+<article class="song"><div class="num">♡ 03</div><h3>Otra pequeña parte de lo que siento</h3><p>Toca para escucharla en YouTube</p><a class="btn" target="_blank" rel="noopener" href="https://youtu.be/7skBcqj9dNE">▶ Escuchar</a></article>
+<article class="song"><div class="num">♡ 04</div><h3>Una canción que también me hace pensar en nosotros</h3><p>Toca para escucharla en YouTube</p><a class="btn" target="_blank" rel="noopener" href="https://youtu.be/zLX_GcXt2pI">▶ Escuchar</a></article>
+</div></section>
+<section class="panel"><h2 class="section-title">Una carta para ti 💌</h2><p class="letter">Mi Lulu:
+
+Quería dejarte un lugarcito al que puedas volver cuando quieras recordar lo mucho que te quiero. Gracias por cada sonrisa, cada conversación y cada momento compartido. No sé cuántas canciones más te dedicaré, pero sí sé que siempre voy a encontrar motivos para pensar en ti.
+
+Con muchísimo cariño, Omar ♥</p><div style="text-align:center"><button class="btn secondary" id="letterBtn">Un mensajito más…</button></div><p id="letterExtra" class="letter hidden">Si llegaste hasta aquí, quiero que sepas que eres alguien muy especial para mí. Ojalá esta página te saque una sonrisa hoy. ♥</p></section>
+<section class="panel"><h2 class="section-title">Pequeños recuerdos ✨</h2><p style="text-align:center">Un rinconcito para guardar momentos que nos hacen sonreír.</p><div id="memories" class="memory-list"><div class="memory">♡ Un recuerdo bonito que siempre guardaré contigo.</div></div><textarea id="memoryInput" placeholder="Escribe aquí un recuerdo bonito…"></textarea><div style="text-align:center"><button class="btn" id="addMemory">Guardar recuerdo en esta vista</button></div><p style="font-size:13px;color:#d5bdca;text-align:center">Los recuerdos que agregues aquí son temporales y se borran al recargar la página.</p></section>
+<section class="panel"><h2 class="section-title">Nuestro álbum 📸</h2><p style="text-align:center">Puedes elegir fotos para verlas aquí en esta sesión.</p><input id="photoInput" type="file" accept="image/*" multiple><div id="photos" class="photos"></div><p style="font-size:13px;color:#d5bdca;text-align:center">Las fotos se muestran localmente; no se suben ni se guardan en una web.</p></section>
+<section class="panel secret"><h2 class="section-title">Una pequeña sorpresa 💗</h2><p>Hay un mensajito escondido para ti…</p><button class="btn" id="secretBtn">Abrir mi sorpresa ♥</button><p id="secretText" class="hidden">Lulu, entre tantas cosas bonitas, una de mis favoritas es poder dedicarte este pequeño espacio. Gracias por ser parte de mi vida. Te quiero mucho. ♥</p></section>
+
+<section class="panel birthday" id="birthdaySection">
+  <h2 class="section-title">🎂 Cumpleaños de Lulu 🎁</h2>
+  <div id="birthdayLocked" class="secret">
+    <div style="font-size:42px">🔒</div>
+    <p><strong>Una sorpresa está esperando aquí…</strong></p>
+    <p>Este rinconcito se abrirá el día de tu cumpleaños. ♥</p>
+    <label for="birthdayDate" style="display:block;font-size:14px;color:#f8dce9">Configurar la fecha de cumpleaños para esta vista:</label>
+    <input id="birthdayDate" type="date" value="2026-12-11" aria-label="Fecha del cumpleaños" style="max-width:260px">
+    <p id="birthdayStatus" style="font-size:13px;color:#d5bdca">Elige la fecha para activar el desbloqueo automático en esta vista.</p>
+  </div>
+  <div id="birthdayUnlocked" class="hidden">
+    <div class="secret"><div style="font-size:42px">🎉💖🎉</div><h3>¡Feliz cumpleaños, mi Lulu!</h3><p>¡Llegó tu día! Aquí empieza nuestra aventura especial. ♥</p></div>
+    <div class="grid">
+      <article class="song"><div class="num">🎵 MÚSICA</div><h3>Nuestra playlist</h3><p>Las canciones que preparé para acompañar tu día.</p><a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener">▶ Abrir música</a></article>
+      <article class="song"><div class="num">📍 PLAN</div><h3>Nuestro lugar especial</h3><p>El lugar al que iremos juntos. Aquí irá la dirección o una pista sorpresa.</p></article>
+      <article class="song"><div class="num">🎁 SORPRESA</div><h3>Algo preparado para ti</h3><p>Un detalle especial que descubrirás cuando llegue el momento.</p></article>
+    </div>
+    <div class="panel note"><h3>💌 Una carta para tu cumpleaños</h3><p>Mi Lulu, hoy es tu día y quiero que esté lleno de sonrisas, momentos bonitos y mucho cariño. ¡Feliz cumpleaños! ♥</p></div>
+  </div>
+</section>
+
+<footer>Hecho con cariño, solo para ti.<div class="signature">Con cariño, Omar ♥</div></footer>
+</main><script>
+
+const birthdayDate=document.getElementById('birthdayDate');
+// Fecha de cumpleaños de Lulu: 11 de diciembre.
+
+const birthdayLocked=document.getElementById('birthdayLocked');
+const birthdayUnlocked=document.getElementById('birthdayUnlocked');
+const birthdayStatus=document.getElementById('birthdayStatus');
+function checkBirthday(){
+  const chosen=birthdayDate.value;
+  if(!chosen){birthdayLocked.classList.remove('hidden');birthdayUnlocked.classList.add('hidden');birthdayStatus.textContent='Elige la fecha para activar el desbloqueo automático en esta vista.';return;}
+  const today=new Date(); today.setHours(0,0,0,0);
+  const target=new Date(chosen+'T00:00:00');
+  if(today>=target){birthdayLocked.classList.add('hidden');birthdayUnlocked.classList.remove('hidden');}
+  else {birthdayLocked.classList.remove('hidden');birthdayUnlocked.classList.add('hidden');birthdayStatus.textContent='🔒 Se abrirá el '+target.toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric'})+'.';}
+}
+birthdayDate.addEventListener('change',checkBirthday);
+checkBirthday();
+
+document.getElementById('letterBtn').addEventListener('click',()=>{document.getElementById('letterExtra').classList.toggle('hidden')});
+document.getElementById('secretBtn').addEventListener('click',()=>{document.getElementById('secretText').classList.remove('hidden');for(let i=0;i<18;i++){const s=document.createElement('span');s.className='spark';s.textContent=['♥','♡','✨'][i%3];s.style.left=(8+Math.random()*84)+'vw';s.style.top=(45+Math.random()*40)+'vh';document.body.appendChild(s);setTimeout(()=>s.remove(),1900)}});
+document.getElementById('addMemory').addEventListener('click',()=>{const input=document.getElementById('memoryInput');const value=input.value.trim();if(!value)return;const el=document.createElement('div');el.className='memory';el.textContent='♡ '+value;document.getElementById('memories').appendChild(el);input.value=''});
+document.getElementById('photoInput').addEventListener('change',e=>{const area=document.getElementById('photos');area.innerHTML='';[...e.target.files].forEach(file=>{if(!file.type.startsWith('image/'))return;const img=document.createElement('img');img.alt='Recuerdo';img.src=URL.createObjectURL(file);area.appendChild(img)})});
+</script></body></html>
